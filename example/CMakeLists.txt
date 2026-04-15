@@ -11,3 +11,5 @@ add_custom_command(TARGET list_example POST_BUILD
         ${CMAKE_CURRENT_SOURCE_DIR}/inlet.in
         $<TARGET_FILE_DIR:list_example>/inlet.in
 )
+
+add_test(NAME list_example_runs COMMAND list_example)
